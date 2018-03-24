@@ -5166,9 +5166,6 @@ Created using IcoMoon - icomoon.io
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  /*-moz-transform: translate(-50%, -50%);*/
-  /*-ms-transform: translate(-50%, -50%);*/
-  /*-o-transform: translate(-50%, -50%);*/
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0 15px;
@@ -7077,24 +7074,9 @@ Created using IcoMoon - icomoon.io
     opacity: 0.0;
   }
 }
-@-moz-keyframes pulsate {
-  0% {
-    -moz-transform: scale(0.6, 0.6);
-            transform: scale(0.6, 0.6);
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    -moz-transform: scale(1, 1);
-            transform: scale(1, 1);
-    opacity: 0.0;
-  }
-}
+
 @keyframes pulsate {
   0% {
-    -moz-transform: scale(0.6, 0.6);
     -webkit-transform: scale(0.6, 0.6);
             transform: scale(0.6, 0.6);
     opacity: 0.0;
@@ -7103,7 +7085,6 @@ Created using IcoMoon - icomoon.io
     opacity: 1.0;
   }
   100% {
-    -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
     opacity: 0.0;
@@ -7112,6 +7093,7 @@ Created using IcoMoon - icomoon.io
 
 .cc-profile-image a {
   position: relative;
+  display: inline-block;
 }
 
 .cc-profile-image a:before {
@@ -7122,10 +7104,8 @@ Created using IcoMoon - icomoon.io
   width: 180px;
   position: absolute;
   left: 0;
-  -moz-animation : pulsate 1.6s ease-out;
   -webkit-animation: pulsate 1.6s ease-out;
           animation: pulsate 1.6s ease-out;
-  -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   opacity: 0.0;
@@ -7142,19 +7122,16 @@ Created using IcoMoon - icomoon.io
   border: 15px solid transparent;
   z-index: 9999;
   -webkit-transition: all .3s ease-out;
-  /*-moz-transition: all .3s ease-out;*/
   transition: all .3s ease-out;
 }
 
 .cc-profile-image a:hover img {
   -webkit-transform: scale(1.06, 1.06);
-  /*-moz-transform: scale(1.06, 1.06);*/
           transform: scale(1.06, 1.06);
 }
 
 .cc-profile-image a:hover:before {
   -webkit-animation: none;
-  /*-moz-animation: none;*/
           animation: none;
 }
 
@@ -7332,25 +7309,3 @@ a.credit {
   margin: 1em;
   margin-left: 2em;
 }
-
-/*.icon-list li:nth-child(1):before {
-  font-family: 'FontAwesome';
-  content: '\f121';
-  float: left;
-  margin-left: -1.5em;
-  color: #0074D9;
-}
-.icon-list li:nth-child(2):before {
-  font-family: 'FontAwesome';
-  content: '\f1fc';
-  float: left;
-  margin-left: -1.5em;
-  color: #0074D9;
-}
-.icon-list li:nth-child(3):before {
-  font-family: 'FontAwesome';
-  content: '\f2db';
-  float: left;
-  margin-left: -1.5em;
-  color: #0074D9;
-}*/
